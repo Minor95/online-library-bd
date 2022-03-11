@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>BooksViews</title>
+</head>
+<style>
+    body {
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+    }
+    .mat {
+        width: 1500px;
+        height: 1000px;
+        margin: 0 auto;
+    }
+    .header {
+        margin-top: 5px;
+        width: 1500px;
+        height: 100px;
+        background-color: black;
+        box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    }
+    .section {
+       margin-top: 5px; 
+       width: 1500px;
+       height: auto;
+       box-shadow: 0 0 3px rgba(0,0,0,0.5);
+       background-color: white;
+    }
+    .TextDiv {
+        margin: auto;
+        width: 300px;
+        height: 30px;      
+    }
+    .headerText {      
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+    .nav ul li a {
+        font-size: 17px;
+        text-decoration: none;
+        margin-left: 40px;
+        color: white;
+    }
+    ul li a:hover {
+        font-size: 19px;
+    }
+</style>
+<body>
+    <div class="mat">
+        <div class="header">
+            <br>
+            <div class="TextDiv">
+                <h1 class="headerText">КНИГИ В АРЕНДУ</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                     <li>
+                    <a href="/all/books">Главная</a>
+                </li>
+                <li>
+                    {{>menu}}
+                </li>    
+            </ul>
+            </nav>
+        </div>
+        <div class="section">
+            {{{body}}}
+        </div>
+    </div> 
+</body>
+</html>

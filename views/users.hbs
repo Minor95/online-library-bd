@@ -1,0 +1,41 @@
+<br>
+<style>
+    ul {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    li {
+        list-style-type: none;
+        font-size: 19px;
+    }
+    .photo {
+        width: 50px;
+        height: 50px;
+        border-radius: 100px ;
+    }
+    .flex {
+        margin-left: 10px;
+        display: flex;
+    }
+    .name {
+        text-decoration: none;
+        
+    }
+    .carText {
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+    .top {
+        text-align: center;
+    }
+</style>
+<h1 class="top">Список users</h1>
+<ul>
+    {{#each users}}
+    <li>
+     <div class="avatar">
+         <div class="flex"><img class="photo" src="{{photo}}" alt=""><div class="carText"><a class="name" href="/user/profile/{{_id}}">{{user}}</a></div></div><br>
+             </div>
+    </li>
+    {{/each}}
+</ul>

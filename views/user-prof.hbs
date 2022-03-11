@@ -1,0 +1,32 @@
+<br>
+<style>
+    .matAvatar {
+        width: 1500px;
+    }
+    .photoBlock {
+       width:  300px;
+       height: auto;
+        margin: 0 auto;
+    }
+    .photo {
+         box-shadow: 0 0 3px rgba(0,0,0,0.5);
+        width: 300px;
+    }
+    .name {
+        font-size: 24px;
+        text-align: center;
+    }
+</style>
+{{#each user}}
+<div class="matAvatar">
+    <div class="photoBlock">
+        <img class="photo" src="{{photo}}" alt="">
+    </div>
+    <div class="nameBlock">
+        <div class="name">{{user}}</div>
+    </div>
+    <div class="info">
+
+    </div>
+</div>
+{{/each}}

@@ -1,0 +1,61 @@
+<style>
+    ul {
+        margin-left: 0;
+        padding-left: 0;
+        display: flex;
+    }
+    li {
+        list-style-type: none;
+        font-size: 19px;
+    }
+    .metrinskiy {
+        margin-left: 10px;
+        width: 1500px;
+        height: auto;
+    }
+    .photo {
+        margin-left: 40px;
+        width: 1500px;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+    }
+    .textName {
+        margin-left: 20px ;
+    } 
+    .bookPhoto {
+        width: 350px;
+        
+    }
+    h1 {
+        
+        margin: 0;
+        padding: 0;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    .text {
+        width: 400px;
+    }
+</style>
+<br>
+{{#each books}}
+
+<div class="metrinskiy">
+    <div class="photo"><img class="bookPhoto" src="{{photo}}" alt="">
+    <div class="textName"><h1>{{bookName}}</h1><div class="text"><h2>{{text}}</h2></div></div>
+    </div>
+    </div>
+{{/each}}
+<br>
+<br>
+<br>
+
+{{#each comments}}
+<hr>
+{{text}}
+<hr>
+{{/each}}
+<br>
+<br>
